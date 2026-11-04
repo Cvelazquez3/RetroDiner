@@ -398,19 +398,14 @@ img {
 #body .content div div p a:hover {
 	color :#80210b;
 }
-#body .content div div h1 {
+#body .content div div h1,
+#body .content div div h2.category-title,
+#body .content div div h2 {
 	font-family :'Lobster1.4Regular';
 	font-size :36px;
 	color :#1b6568;
 	font-weight :normal;
 	margin: 0 0 10px 0;
-}
-#body .content div div h2.category-title {
-	font-family :'Lobster1.4Regular';
-	font-size :28px;
-	color :#822619;
-	font-weight :normal;
-	margin: 10px 0;
 }
 #body .content div div ul {
 	list-style-type :none;
@@ -488,7 +483,7 @@ img {
 }
 #body .sidebar {
 	width :280px;
-	float :left;
+	float :right;
 	margin :30px 0;
 	text-align :center;
 	padding-top :30px;
