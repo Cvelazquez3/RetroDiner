@@ -131,25 +131,33 @@ img {
 	position :absolute;
 	left: 0px;
 	top: 155px;
-	overflow :visible;
+	overflow :visible !important;
 	width: 620px;
+	z-index: 9999 !important;
 }
 #header div ul.navigation li {
 	float :left;
-	margin-right: 5px;
+	margin-right: 6px;
+	position: relative;
+	z-index: 10000;
 }
 #header div ul.navigation li:first-child a {
-	padding-left :20px;
+	padding-left :18px;
 }
 #header div ul.navigation li a {
 	text-decoration :none;
-	padding: 5px 22px;
+	padding: 6px 18px;
 	display: inline-block;
 	font-family :'Lobster1.4Regular';
 	background: #1B6568;
 	color :#ffffff;
 	font-size: 21px;
 	line-height: 25px;
+	border: 2px solid transparent;
+	border-radius: 4px;
+	position: relative;
+	z-index: 10001;
+	box-sizing: border-box;
 }
 #header div ul.navigation li a:hover {
 	color :#ffda79;
@@ -158,8 +166,11 @@ img {
 #header div ul.navigation li a:focus,
 #header div ul.navigation li a:focus-visible {
 	outline: 3px solid #ffda79 !important;
-	outline-offset: 2px;
-	color: #ffda79;
+	outline-offset: 1px !important;
+	border: 2px solid #ffda79 !important;
+	box-shadow: inset 0 0 0 2px #ffda79, 0 0 0 2px #ffda79 !important;
+	background: #12484a !important;
+	color: #ffda79 !important;
 	text-decoration: underline;
 }
 #header div ul.navigation li a.active {
@@ -749,14 +760,15 @@ img {
 	padding :0;
 }
 #footer div ul li h3,
+#footer div ul li p,
 #footer div ul li p.phone {
-	color :#ebe9d7;
-	font-family :'Lobster1.4Regular';
-	font-size :24px;
-	font-weight :normal;
-	margin :10px 0;
-	padding :0;
-	line-height :25px;
+	color: #ffffff !important;
+	font-family: 'Lobster1.4Regular', cursive, sans-serif !important;
+	font-size: 24px !important;
+	font-weight: normal !important;
+	margin: 10px 0 !important;
+	padding: 0 !important;
+	line-height: 28px !important;
 }
 #footer div ul li ul {
 	list-style-type :none;
