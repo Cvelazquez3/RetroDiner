@@ -1,0 +1,5 @@
+# Ignorar subcarpeta duplicada al descomprimir
+retrodiner/
+
+# Ignorar archivos binarios pesados de diseo (Photoshop)
+*.psd
